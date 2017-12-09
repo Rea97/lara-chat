@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="{{ app()->getLocale() }}" style="background-color: #EEEEEE">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,7 +38,7 @@
                         </div>
                     @else
                         <div class="navbar-item has-dropdown is-hoverable">
-                            <a href="#" class="navbar-link">User</a>
+                            <a href="#" class="navbar-link">{{ auth()->user()->name }}</a>
                             <div class="navbar-dropdown is-boxed">
                                 <a href="{{ route('logout') }}" class="navbar-item" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

@@ -13,14 +13,14 @@
                             <form class="form-horizontal" role="form" method="POST" action="{{ route('register') }}">
                                 {{ csrf_field() }}
                                 <div class="field">
-                                    <label class="label">Name</label>
+                                    <label class="label">Username</label>
                                     <p class="control">
                                         <input id="name"
                                                type="text"
                                                class="input {{ $errors->has('name') ? 'is-danger' : '' }}"
                                                name="name"
                                                value="{{ old('name') }}"
-                                               placeholder="John Smith"
+                                               placeholder="jhonsmith"
                                                required
                                                autofocus>
                                         @if($errors->has('name'))
