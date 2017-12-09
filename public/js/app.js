@@ -64435,8 +64435,8 @@ window.Pusher = __webpack_require__("./node_modules/pusher-js/dist/web/pusher.js
 
 window.Echo = new __WEBPACK_IMPORTED_MODULE_0_laravel_echo___default.a({
   broadcaster: 'pusher',
-  key: 'd876c38ad0d2cdc17a3d',
-  cluster: 'us2'
+  key: window.pusherCredentials.key,
+  cluster: window.pusherCredentials.cluster
 });
 
 /***/ }),
