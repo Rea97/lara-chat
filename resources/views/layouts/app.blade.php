@@ -58,6 +58,13 @@
         @yield('content')
     </div>
 
+    <script>
+        // For simplicity, we define a global variable with the pusher credentials
+        window.pusherCredentials = {
+            key: '{{ config('broadcasting.connections.pusher.key') }}',
+            cluster: '{{ config('broadcasting.connections.pusher.options.cluster') }}'
+        };
+    </script>
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}"></script>
 </body>
